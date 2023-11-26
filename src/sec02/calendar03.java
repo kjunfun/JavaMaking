@@ -36,6 +36,8 @@ public class calendar03 {
         }
         scanner.close();
         System.out.println();
+        System.out.println("Good Bye~ 아래는 샘플 달력 입니다.");
+        System.out.println();
         SampleCalendar();
     }
 }
