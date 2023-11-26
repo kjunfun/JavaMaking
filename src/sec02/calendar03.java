@@ -24,13 +24,17 @@ public class calendar03 {
     }
 
     public static void main(String[] args) {
-        System.out.println("달을 입력하세요.");
+        System.out.println("반복횟수를 입력하세요.");
         Scanner scanner = new Scanner(System.in);
-        int month = scanner.nextInt();
+        int repeat = scanner.nextInt();
+        // for문은 while문과 달리 반복 횟수가 정해져 있을 때 사용한다.
+        for (int i = 0; i < repeat; i++) {
+            System.out.println("달을 입력하세요.");
+            int month = scanner.nextInt();
+            System.out.printf("%d월은 %d일까지 있습니다.", month, getMonthDays(month));
+            System.out.println();
+        }
         scanner.close();
-        System.out.println();
-        System.out.printf("%d월은 %d일까지 있습니다.", month, getMonthDays(month));
-        System.out.println();
         System.out.println();
         SampleCalendar();
     }
