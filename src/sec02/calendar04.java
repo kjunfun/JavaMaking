@@ -12,6 +12,9 @@ public class calendar04 {
             System.out.println("월을 입력하세요.");
             System.out.print(PROMPT);
             int month = scanner.nextInt();
+            // TIL: static 필드, 메소드는 객체 생성없이 직접 호출 가능. but 일반적인 필드, 메소드는 객체를 생성해야 접근 가능함.
+            // 가상의 달력 찍기: 월별 출력모양이 변화되는 달력을 만들어라!
+            calendar03.SampleCalendar();
             if (month < 1) {
                 System.out.println("Have a nice day!");
                 break; // while문 종료
