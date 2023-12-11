@@ -1,6 +1,5 @@
 package sec02.RealCalendar;
 
-import java.util.Calendar;
 import java.util.Scanner;
 
 // Prompt 입출력 작업 및 Calendar 호출하여 사용
@@ -20,7 +19,13 @@ public class Prompt {
                 System.out.println("Have a nice day~");
                 break;
             }
-            mycal.Cal(year, month);
+            System.out.println("첫번째 요일을 입력하세요. (SU, MO, TU, WE, TH, FR, SA)");
+            System.out.print("WEEKDAY > ");
+            String weekday = scanner.next(); // 문자열 입력시 next 방식이 엔터키 소비 작업 처리
+            System.out.println();
+            mycal.Cal(year, month, weekday);
         }
+        // 스캐너 닫기
+        scanner.close();
     }
 }
