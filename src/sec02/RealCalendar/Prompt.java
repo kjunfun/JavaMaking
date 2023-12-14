@@ -19,11 +19,8 @@ public class Prompt {
                 System.out.println("Have a nice day~");
                 break;
             }
-            System.out.println("첫번째 요일을 입력하세요. (SU, MO, TU, WE, TH, FR, SA)");
-            System.out.print("WEEKDAY > ");
-            String weekday = scanner.next(); // 문자열 입력시 next 방식이 엔터키 소비 작업 처리
             System.out.println();
-            mycal.Cal(year, month, weekday);
+            mycal.Cal(year, month);
         }
         // 스캐너 닫기
         scanner.close();
